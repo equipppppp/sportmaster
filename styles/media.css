@@ -1,0 +1,24 @@
+.media {
+  padding: var(--padding_huge) 0;
+}
+
+.media__articles {
+  padding-top: 28px;
+}
+
+@media screen and (max-width: 1439px) {
+  .media {
+    padding: var(--padding_large) 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .media {
+    padding: var(--padding_medium) 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .media {
+    padding: var(--padding_small) 0;
+  }
+}

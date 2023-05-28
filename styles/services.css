@@ -1,0 +1,120 @@
+.services {
+  position: relative;
+  padding-top: 200px;
+  height: max-content;
+}
+
+.services__container {
+  display: flex;
+  justify-content: space-between;
+}
+.services__info {
+  padding-top: 102px;
+  flex-grow: 1;
+}
+
+.services__image {
+  margin-left: 150px;
+  width: 774px;
+  height: 1100px;
+  background-image: url(../images/services/constructor.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+.constructor {
+  background-image: url(../images/services/constructor.png);
+}
+.print {
+  background-image: url(../images/services/print.png);
+}
+.delivery {
+  background-image: url(../images/services/delivery.png);
+}
+@media screen and (max-width: 1919px) {
+  .services .services__background {
+    aspect-ratio: 1.77;
+    min-height: 816px;
+  }
+  .services {
+    padding-top: var(--padding_large);
+  }
+  .services__info {
+    padding-top: 185px;
+  }
+  .services__image {
+    width: 49%;
+    aspect-ratio: 0.704;
+    height: auto;
+    min-height: 816px;
+    min-width: 574px;
+    margin-left: 117px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .services {
+    padding: var(--padding_large) 0;
+    background-color: var(--grey);
+  }
+
+  .services__container {
+    align-items: center;
+  }
+  .services__info {
+    padding-top: 0;
+  }
+  .services__image {
+    min-width: 450px;
+    min-height: 639px;
+    margin-left: 96px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .services {
+    padding: var(--padding_medium) 0;
+  }
+  .services__container {
+    padding-right: 0;
+  }
+  .services__image_large {
+    display: none;
+  }
+  .services__image_medium {
+    display: block;
+  }
+  .services__image {
+    width: 43.5%;
+    min-width: 334px;
+    min-height: 620px;
+    margin-left: 57px;
+    aspect-ratio: 0.539;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .services {
+    padding-top: 0;
+    padding-bottom: var(--padding_small);
+  }
+  .services__container {
+    flex-direction: column-reverse;
+    padding-right: 12px;
+  }
+
+  .services__image {
+    width: calc(100% + 24px);
+    max-width: 400px;
+    min-width: auto;
+    aspect-ratio: 0.963;
+    min-height: auto;
+    margin-left: 0;
+  }
+
+  .services__info {
+    width: 100%;
+    margin-top: 67px;
+  }
+}

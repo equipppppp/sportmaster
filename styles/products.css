@@ -1,0 +1,207 @@
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 48px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product_first {
+  width: calc(50% - 1 / 2 * 18px);
+}
+.product_second,
+.product_third,
+.product_fourth,
+.product_fifth,
+.product_sixth,
+.product_seventh {
+  width: calc(25% - 3 / 4 * 18px);
+  aspect-ratio: 0.75;
+}
+.product_first {
+  background-image: url(../images/products/man.png);
+}
+.product_second {
+  background-image: url(../images/products/boots.png);
+}
+.product_third {
+  background-image: url(../images/products/gloves.png);
+}
+.product_fourth {
+  background-image: url(../images/products/backpack.png);
+}
+.product_fifth {
+  background-image: url(../images/products/ball.png);
+}
+.product_sixth {
+  background-image: url(../images/products/inventory.png);
+}
+.product_seventh {
+  background-image: url(../images/products/medicine.png);
+}
+.product__name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.product__options {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.product .product__options_secondline {
+  margin-top: 6px;
+}
+.product__option {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 4px 12px;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #333333;
+}
+.product__option_more {
+  display: none;
+}
+@media screen and (max-width: 1919px) {
+  .product__name {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 3px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .products {
+    margin-top: 42px;
+  }
+  .product_first {
+    width: calc(2 / 3 * 100% - 1 / 3 * 18px);
+  }
+  .product_second,
+  .product_third,
+  .product_fourth,
+  .product_fifth {
+    width: calc(1 / 3 * 100% - 2 / 3 * 18px);
+  }
+  .product_sixth,
+  .product_seventh {
+    width: calc(50% - 1 / 2 * 18px);
+    aspect-ratio: 1.15;
+  }
+  .product_sixth {
+    background-image: url(../images/products/inventory_square.png);
+  }
+  .product_seventh {
+    background-image: url(../images/products/medicine_square.png);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .products {
+    gap: 14px;
+    margin-top: 32px;
+  }
+  .product {
+    padding: 24px 0 24px 24px;
+  }
+  .product_first {
+    width: calc(2 / 3 * 100% - 1 / 3 * 14px);
+  }
+  .product_second,
+  .product_third,
+  .product_fourth,
+  .product_fifth {
+    width: calc(1 / 3 * 100% - 2 / 3 * 14px);
+  }
+  .product_sixth,
+  .product_seventh {
+    width: calc(50% - 1 / 2 * 14px);
+  }
+  .product__name {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1.6px;
+  }
+  .product__option {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 6px 12px;
+  }
+  .product__options_secondline .product__option_more {
+    display: block;
+  }
+  .product__options_secondline .product__option_football {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products {
+    margin-top: 28px;
+    gap: 9px;
+  }
+  .product {
+    padding: 12px;
+  }
+  .product_first {
+    width: 100%;
+    aspect-ratio: 1.6;
+  }
+  .product_second,
+  .product_third,
+  .product_fourth,
+  .product_fifth,
+  .product_sixth,
+  .product_seventh {
+    width: calc(50% - 1 / 2 * 9px);
+  }
+  .product_sixth {
+    background-image: url(../images/products/inventory.png);
+    aspect-ratio: 0.75;
+  }
+  .product_seventh {
+    background-image: url(../images/products/medicine.png);
+    aspect-ratio: 0.75;
+  }
+  .product_sixth span {
+    display: none;
+  }
+  .product__options {
+    margin-top: 0;
+  }
+  .product__options_secondline {
+    display: none;
+  }
+  .product__options_firstline .product__option_more {
+    display: block;
+  }
+}
+@media screen and (max-width: 475px) {
+  .product__name {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.3px;
+  }
+  .product_second .product__option,
+  .product_third .product__option,
+  .product_sixth .product__option {
+    font-size: 6.7px;
+    line-height: 11.5px;
+    padding: 1.9px 5.75px;
+  }
+  .product__options {
+    margin-top: 6px;
+  }
+}

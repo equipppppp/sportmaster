@@ -1,0 +1,8 @@
+:root {
+  --grey: #f7f7f7;
+  --buttons_border: 1px solid rgba(186, 186, 186, 0.5);
+  --padding_small: 72px;
+  --padding_medium: 80px;
+  --padding_large: 110px;
+  --padding_huge: 140px;
+}

@@ -1,0 +1,25 @@
+.links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 32px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.link__text {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .links {
+    gap: 8px 24px;
+  }
+  .link__text {
+    font-weight: 500;
+    font-size: 12px;
+  }
+}

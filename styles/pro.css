@@ -1,0 +1,134 @@
+.pro {
+  margin-top: var(--padding_huge);
+  padding-top: 200px;
+  position: relative;
+}
+.pro__container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.pro__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  aspect-ratio: 1.55;
+  background: var(--grey);
+  max-height: 1236px;
+  z-index: -1;
+}
+.pro__image {
+  width: 819px;
+  height: 1163px;
+  margin-right: 152px;
+  flex-shrink: 0;
+  background-image: url(../images/pro/boys.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pro__info {
+  padding-top: 102px;
+  flex-grow: 1;
+}
+.pro__buttons {
+  margin-top: 60px;
+}
+
+.friends {
+  background-image: url(../images/pro/friends.png);
+}
+.boys {
+  background-image: url(../images/pro/boys.png);
+}
+.profi {
+  background-image: url(../images/pro/profi.png);
+}
+@media screen and (max-width: 1919px) {
+  .pro {
+    padding-top: 160px;
+  }
+  .pro__background {
+    aspect-ratio: 1.56;
+    min-height: 928px;
+  }
+  .pro__buttons {
+    margin-top: 40px;
+  }
+  .pro__image {
+    width: 46.5%;
+    aspect-ratio: 0.705;
+    height: auto;
+    min-height: 869px;
+    min-width: 612px;
+    margin-right: 117px;
+  }
+
+  .pro__info {
+    padding-top: 92px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .pro {
+    margin-top: var(--padding_large);
+    padding: var(--padding_large) 0;
+    background-color: var(--grey);
+  }
+  .pro__background {
+    display: none;
+  }
+
+  .pro__image {
+    width: 43.5%;
+    min-height: 603px;
+    min-width: 425px;
+    margin-right: 96px;
+  }
+  .pro__info {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .pro {
+    margin-top: var(--padding_medium);
+    padding: var(--padding_medium) 0;
+  }
+
+  .pro__image {
+    width: 44%;
+    min-height: 620px;
+    aspect-ratio: 0.539;
+    min-width: 334px;
+    margin-right: 57px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pro {
+    margin-top: var(--padding_small);
+    padding: 0 0 var(--padding_small) 0;
+  }
+  .pro__container {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 12px;
+  }
+
+  .pro__image {
+    width: calc(100% + 24px);
+    max-width: 400px;
+    min-width: auto;
+    aspect-ratio: 0.963;
+    min-height: auto;
+    margin-right: 0;
+  }
+
+  .pro__info {
+    padding-top: 40px;
+    width: 100%;
+  }
+  .pro__buttons {
+    margin-top: 20px;
+  }
+}

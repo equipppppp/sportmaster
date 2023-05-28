@@ -1,0 +1,124 @@
+.experts {
+  padding: var(--padding_huge) 0;
+}
+.experts__container {
+  display: flex;
+  align-items: center;
+  gap: 208px;
+  padding-right: 0;
+}
+.experts__header {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.swiper-wrapper .experts__slide {
+  width: 510px;
+  height: auto;
+  border: 1px solid #bababa;
+}
+.experts__image {
+  width: 100%;
+}
+.experts__info {
+  padding: 37px 48px 10px;
+}
+.experts__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.experts__description {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 18px;
+}
+.experts__description p {
+  margin-top: 15px;
+}
+.experts__description p:first-child {
+  margin-top: 0;
+}
+.experts__sub {
+  margin-top: 28px;
+}
+@media screen and (max-width: 1919px) {
+  .experts__container {
+    gap: 100px;
+  }
+  .swiper-wrapper .experts__slide {
+    width: 378px;
+  }
+  .experts__name {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2px;
+  }
+  .experts__description {
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .experts {
+    padding: var(--padding_large) 0;
+  }
+  .experts__container {
+    gap: 96px;
+  }
+  .experts__header {
+    width: 300px;
+  }
+  .experts__name {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 1.3px;
+  }
+  .experts__sub {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .experts {
+    padding: var(--padding_medium) 0;
+  }
+  .experts__container {
+    gap: 67px;
+  }
+  .swiper-wrapper .experts__slide {
+    width: 283px;
+  }
+  .experts__info {
+    padding: 36px 36px 10px;
+  }
+  .experts__header {
+    width: 235px;
+  }
+  .experts__description {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .experts {
+    padding: var(--padding_small) 0;
+  }
+  .experts__container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .experts__header {
+    width: 100%;
+    padding-right: 12px;
+  }
+  .experts__info {
+    padding: 36px 36px 10px;
+  }
+
+  .experts__description {
+    margin-top: 12px;
+  }
+  .experts__sub {
+    margin-top: 16px;
+  }
+}
